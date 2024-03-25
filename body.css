@@ -1,0 +1,101 @@
+body::before {
+  content: "";
+  background-image: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  height: 92px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+#search-container {
+  text-align: center;
+  top: 50%;
+}
+
+#search-container::after {
+  content: "";
+  display: block;
+  height: 60px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 30px;
+  font-size: 16px;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+input {
+  display: block;
+  margin: 10 10;
+  margin-top: 350px;
+  margin-left: 30px;
+}
+
+.search-isn {
+  width: 750px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid #000000;
+}
+
+.search-btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid #c7c7c7;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+
+ul li {
+  display: inline;
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 3px 3px;
+  text-decoration: none;
+  display: block;
+}
+
+nav:hover .dropdown-content {
+  display: block;
+}
